@@ -1,36 +1,66 @@
-body{
-  font-family: 'Montserrat';
-  color: #FDFFFC;
+.bg-company-red{
+  background-color: rgb(50, 171, 171);
+}
+#navid{
+  margin-left: 20px;
+  background-color: pink;
+}
+#homepagecover{
+  background-attachment: fixed;
+  padding: 200px 0 ;
+  background-image: url("img/bg-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   text-align: center;
-  background-color: #011627;
-  border: 60px solid #2EC4B6;
-  border-top: 0px;
-  /*border-bottom: 0px;*/
-  margin: 0px;
+  background-size: cover;
 }
 
-p{
-  color: #FDFFFC;
-  padding-top: 5%;
-  padding-left: 20%;
-  padding-right: 20%;
+#rowofthree{
+
+  margin: 30px 30px 30px 15px;
+  display: flex;
+}
+#rowoftwo{
+  display: flex;
+    margin: 5px 15px 5px 1px;
+}
+#rowimage{
+  width: 100%;
 }
 
-h2{
-  margin-bottom: 5%;
+#servicecover{
+  background-attachment: fixed;
+  padding: 100px 0 ;
+  background-image: url("img/bg-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  background-size: cover;
 }
+  #rowoffour{
+    display: flex;
 
-.anything{
-  margin-bottom: 10px;
-  font-size: 1.5em;
-}
+    margin: 5px 15px 5px 1px;
+  }
+  #rowmargin{
+    padding: 20px;
+  }
+  #formcover{
+    background-attachment: fixed;
+    padding: 100px 0 ;
+    background-image: url("img/bg-3.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    background-size: cover;
+  }
 
-#sub {
-  border-radius: 25px;
-  background: #FF9F1C;
-  height: 80px;
-  width: 130px;
-  font-family: "Montserrat";
-  font-size: 1.2em;
-  margin-bottom: 4px;
-}
+  .form-group{
+    zoom: 1;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+
+  }
+  #forminput{
+    margin-bottom: 10px;
+  }
