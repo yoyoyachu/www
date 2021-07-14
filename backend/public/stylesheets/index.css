@@ -51,22 +51,4 @@ body{
     color: #35b7c0;
 }
 
-/* hobbies-section */
-.hobbies-section{
-    height: 500px;
-    background-color: white;
-    padding: 5%;
-}
-.hobbies-container{
-    
-    background-color: #35b7c0;
-    
-}
-.hobby-with-icon{
-    display: flex;
-    padding: 2%;
-    justify-content: space-around;
-}
-.hobby-icon{
-    font-size: 400%;
-}
+/* skills-section */
