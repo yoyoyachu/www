@@ -11,13 +11,13 @@ body{
     align-items: center;
     justify-content: center;
 }
-.pre-landing-title{
-    
-}
 .landing-title{
     font-size: 600%;
 }
-
+.nav-logo{
+    height: 80px;
+    width: 80px;
+}
 
 /* intro-section */
 
