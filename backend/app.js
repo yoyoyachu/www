@@ -13,6 +13,9 @@ app.use(express.static(path.join(__dirname,'public')))
 app.get('/index',(req,res)=>{
     res.render('index')
 })
+app.get('/project',(req,res)=>{
+    res.render('project')
+})
 
 app.listen(3001,()=>{
     console.log('on port 3001')
