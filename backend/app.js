@@ -16,7 +16,9 @@ app.get('/index',(req,res)=>{
 app.get('/project',(req,res)=>{
     res.render('project')
 })
-
+app.get('/project1',(req,res)=>{
+    res.render('projecttry')
+})
 app.listen(3001,()=>{
     console.log('on port 3001')
 })

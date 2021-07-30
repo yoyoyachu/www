@@ -21,6 +21,7 @@ body{
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 5px;
+    margin-right: 4%;
 }
 
 .btn-program:hover {
@@ -31,14 +32,12 @@ body{
 
 .project-links{
     display: flex;
+    justify-content: flex-end;
+
 }
 
 .section-project{
     /* background-color: rgb(156, 156, 101); */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
     width: 70%;
 }
 
@@ -46,23 +45,19 @@ body{
     /* background-color: rgb(216, 120, 65); */
     justify-content: space-evenly;
     margin:3% 0;
-    /* box-shadow: 1px 1px 1px #efefef; */
-    
     height: 350px;
 }
 .project-container:hover{
-    /* box-shadow: 1px 1px 20px #5e5d5d; */
     border-bottom: 1px solid gray;
     border-top: 1px solid gray;
-
     opacity: 0.9;
 }
 .project-description-container{
-    padding: 1%;
-    /* background-color: yellow; */
+    padding: 1% 1% 1% 7%;
+    /* background-color: rgb(126, 126, 37); */
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .project-img-container{
     /* background-color: violet; */
@@ -95,32 +90,25 @@ body{
     background-image: url('../images/lottery.png');
 }
 .project-img{
-    /* background-image: url('https://images.unsplash.com/photo-1560017896-a6bf1e2acfb1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d2VhdGhlciUyMGFwcHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60'); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 220px;
-    width: 300px;
+    max-width: 100%;
+    width: 60%;
+    max-height: 100%;
+    height: 60%;
     border-radius: 5px;
     transition: transform .3s; /* Animation */
 }
 .project-img:hover{
-    transform: scale(1.4); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    opacity: 0.9;
 }
 .project-title{
     font-size: 140%;
     font-weight: 900;
 }
-.tools-title{
-    margin-bottom: 1.5%;
-}
-.tools-list{
-    display: flex;
-}
-.tools-list-item{
-    padding-right: 3%;
-}
 
-.project-site-link{
-    margin-right: 4%;
-}
+
+
+

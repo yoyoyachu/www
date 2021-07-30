@@ -121,3 +121,25 @@ h1:after {
 .skills{
     /* background-color: burlywood; */
 }
+
+
+
+/*big tablet to big screen:width 1024px to 1200px  */
+@media only screen and (max-width:1200px) {
+    
+}
+  
+/*small tablet to big tablet(portrait):width 768px to 1023px  */
+@media only screen and (max-width:1023px) {
+
+}
+  
+/*big phones to small tablet:width 481px to 767px */
+@media only screen and (max-width:767px) {
+    
+}
+
+/*small phones :upto width 480px  */
+@media only screen and (max-width:480px) {
+    
+}

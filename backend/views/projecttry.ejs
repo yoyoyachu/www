@@ -37,23 +37,29 @@
         ]%>
 
 
+
+
         <div class="container section-project">
             <h1 class="text-center m-5">PROJECTS</h1> 
             <% for(let i=0; i<arr.length; i++){%>
                 <div class="row project-container">
-                    <div class="col-md-6 project-description-container">
+                    <div class="col-md-5 project-description-container">
                         <div class="project-title"><%= arr[i].title%></div>
                         <div class="project-description"><%= arr[i].description%></div>
                         <div class="project-links">
-                            <a class="btn-program " target="_blank" href=<%= arr[i].projLink%> > <i class="fas fa-link"></i></a>
+                            <a class="project-site-link btn-program " target="_blank" href=<%= arr[i].projLink%> > <i class="fas fa-link"></i></a>
                             <a class="btn-program" target="_blank" href=<%= arr[i].gitLink%> > <i class="fab fa-github"></i></a>
                         </div>
                     </div>
-                    <div class="col-md-6 project-img-container"> 
+                    <div class="col-md-5 project-img-container"> 
                         <a href= <%= arr[i].projLink%> target="_blank" class="project-img" id=<%= arr[i].imgId%>></a>
                     </div>
                 </div>
             <%}%>
         </div>
+
+        
+
+        <script src="" async defer></script>
     </body>
 </html>
