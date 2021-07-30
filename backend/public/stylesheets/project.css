@@ -4,6 +4,31 @@ body{
     box-sizing: border-box;
     font-size: 16px;
 }
+/* ------------------------------------------------------------------------ */
+/*--------------------btns for (reUsable) -------------------*/
+/* ------------------------------------------------------------------------ */
+.btn-program {
+    background-color: rgb(65, 65, 65);
+    border: none;
+    color: white;
+    padding: 14px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    /* border: 2px solid ; */
+}
+
+.btn-program:hover {
+    background-color: white;
+    color: rgb(65, 65, 65);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 .section-project{
     /* background-color: rgb(156, 156, 101); */
     display: flex;
