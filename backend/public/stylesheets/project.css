@@ -121,18 +121,12 @@ body{
 
 /*big tablet to big screen:width 768px to 1023px  */
 @media only screen and (max-width:1200px) {
-    body{
-        background-color: rgb(155, 137, 172);
-        
-    }
+
 }
 
 /*small tablet to big tablet:width 768px to 1023px  */
 @media only screen and (max-width:1023px) {
-    body{
-        background-color: rgb(141, 27, 74);
-        
-    }
+  
 }
 
 /*small phones to small tablet:width 481px to 767px */
