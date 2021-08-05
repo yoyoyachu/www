@@ -12,13 +12,13 @@ app.use(express.urlencoded({extended:true}))
 app.use(express.static(path.join(__dirname,'public')))
 
 app.get('/',(req,res)=>{
-    res.render('index')
+    res.render('portfolio/index')
 });
 app.get('/aboutme',(req,res)=>{
-    res.render('aboutme', {arr})
+    res.render('portfolio/aboutme', {arr})
 });
 app.get('/project',(req,res)=>{
-    res.render('project', {arr})
+    res.render('portfolio/project', {arr})
 });
 app.listen(3001,()=>{
     console.log('on port 3001')
