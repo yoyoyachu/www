@@ -4,6 +4,8 @@ const path = require('path');
 const ejs = require('ejs');
 const ejsMate = require('ejs-mate');
 const arr = require('./public/static/project-details');
+const eduDetails = require('./public/static/education-details');
+
 
 app.engine('ejs', ejsMate);
 app.set('view engine','ejs');
@@ -15,7 +17,7 @@ app.get('/',(req,res)=>{
     res.render('portfolio/index')
 });
 app.get('/aboutme',(req,res)=>{
-    res.render('portfolio/aboutme', {arr})
+    res.render('portfolio/aboutme', {eduDetails})
 });
 app.get('/project',(req,res)=>{
     res.render('portfolio/project', {arr})

@@ -1,6 +1,25 @@
 <% layout('layouts/boilerplate')%>
 <div class="aboutme-container">
     <h1 class="m-5">About Me</h1>
+    <div class="container edu-section">
+        <h2 class="edu-heading">Education:</h2>
+        <div class="row ">
+            <%for(let i=0; i<eduDetails.length; i++){%>
+                <div class="col-md-6 edu-col">
+                    <!-- <i class="fa fa-calculator icon-big"></i>             -->
+                    <div class="edu-title"><%= eduDetails[i].title %></div>
+                    <div class=""><%= eduDetails[i].universityName %></div>
+                    <div class="aligned-justify-text edu-year"><%= eduDetails[i].universityYear%></div>
+                    <a title="Certificate" class="edu-link btn-edu" href= <%= eduDetails[i].certi %>><i class="fas fa-award"></i></a>
+                </div>
+            <%}%>
+        </div>
+    </div>
+
+
+
+
+
     <div class="container aboutme-intro">
 
         <p>I grew up in a small town called Navsari in the state of Gujarat. I went to college for Electronics and Communication Engineering at L.D. College of Engineering in the big city of Ahmedabad. Growing up I stayed within half an hour of my home the whole time because you could literally walk out of Navsari within just 30mins. It was such a small town compared to Ahmedabad.</p>
@@ -17,6 +36,5 @@
 
     </div>
 </div>
-
 
 

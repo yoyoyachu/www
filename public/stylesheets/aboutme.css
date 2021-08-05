@@ -1,0 +1,37 @@
+.edu-section{
+    width: 80%;
+}
+.edu-col{
+    padding: 2% 2% 2% 2%;
+    border-left: 1px solid black;
+}
+.edu-title{
+    font-weight: 700;
+    font-size: 110%;
+}
+.edu-heading{
+    text-align: left;
+}
+
+.btn-edu {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: white;
+    height: 40px;
+    width: 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 4%;
+}
+
+.btn-edu:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
