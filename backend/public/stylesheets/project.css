@@ -142,7 +142,7 @@ body{
 /*small phones to small tablet:width 481px to 767px */
 @media only screen and (max-width:768px) {
     .project-container{
-        height: 550px;
+        height: 500px;
         border-bottom: 1px solid black;
     }
     .project-container:last-child{
