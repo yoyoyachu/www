@@ -19,8 +19,8 @@ app.get('/',(req,res)=>{
 app.get('/aboutme',(req,res)=>{
     res.render('portfolio/aboutme', {eduDetails})
 });
-app.get('/project',(req,res)=>{
-    res.render('portfolio/project', {arr})
+app.get('/timeline',(req,res)=>{
+    res.render('portfolio/timeline', {arr})
 });
 app.listen(3001,()=>{
     console.log('on port 3001')

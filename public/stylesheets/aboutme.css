@@ -1,8 +1,11 @@
 .edu-section{
     width: 80%;
 }
+.edu-row{
+    display: flex;
+}
 .edu-col{
-    padding: 2% 2% 2% 2%;
+    padding: 2%;
     border-left: 1px solid black;
 }
 .edu-title{
