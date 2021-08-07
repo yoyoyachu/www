@@ -5,6 +5,7 @@ const ejs = require('ejs');
 const ejsMate = require('ejs-mate');
 const arr = require('./public/static/project-details');
 const eduDetails = require('./public/static/education-details');
+const eduDet = require('./public/static/edu-details');
 
 
 app.engine('ejs', ejsMate);
@@ -20,7 +21,7 @@ app.get('/aboutme',(req,res)=>{
     res.render('portfolio/aboutme', {eduDetails})
 });
 app.get('/timeline',(req,res)=>{
-    res.render('portfolio/timeline', {eduDetails})
+    res.render('portfolio/timeline', {eduDet})
 });
 app.listen(3001,()=>{
     console.log('on port 3001')
