@@ -29,9 +29,8 @@ let eduDetails = [
     {year:2019, details:[
         {title: 'Complete Python Bootcamp: Go from zero to hero in python 3' , courseProvider: 'Udemy' , certi: 'https://www.udemy.com/certificate/UC-C3BJ9JPE/'},
 
-        {title: 'Computer Science 101: The Theory Behind Programming' , courseProvider: 'Udemy' , certi: 'https://www.udemy.com/certificate/UC-YST3GMJF/'}
-    ]},
-    {year:2019, details:[
+        {title: 'Computer Science 101: The Theory Behind Programming' , courseProvider: 'Udemy' , certi: 'https://www.udemy.com/certificate/UC-YST3GMJF/'},
+
         {title: 'Electronics & Communication Engineering', courseProvider: 'Gujarat Technological University, India', certi: ''}
     ]},
     {year:2016, details:[
