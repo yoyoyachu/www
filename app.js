@@ -20,7 +20,7 @@ app.get('/aboutme',(req,res)=>{
     res.render('portfolio/aboutme', {eduDetails})
 });
 app.get('/timeline',(req,res)=>{
-    res.render('portfolio/timeline', {arr})
+    res.render('portfolio/timeline', {eduDetails})
 });
 app.listen(3001,()=>{
     console.log('on port 3001')
