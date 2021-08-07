@@ -3,9 +3,9 @@ const app = express();
 const path = require('path');
 const ejs = require('ejs');
 const ejsMate = require('ejs-mate');
-const arr = require('./public/static/project-details');
+const projArr = require('./public/static/project-details');
 const eduDetails = require('./public/static/education-details');
-const eduDet = require('./public/static/edu-details');
+const eduArr = require('./public/static/edu-details');
 
 
 app.engine('ejs', ejsMate);
@@ -20,10 +20,13 @@ app.get('/',(req,res)=>{
 app.get('/aboutme',(req,res)=>{
     res.render('portfolio/aboutme', {eduDetails})
 });
-app.get('/timeline',(req,res)=>{
-    res.render('portfolio/timeline', {eduDet})
+app.get('/project',(req,res)=>{
+    res.render('portfolio/project', {projArr})
 });
-app.listen(3001,()=>{
-    console.log('on port 3001')
+app.get('/timeline',(req,res)=>{
+    res.render('portfolio/timeline', {eduArr})
+});
+app.listen(3000,()=>{
+    console.log('on port 3000')
 });
 

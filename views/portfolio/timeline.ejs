@@ -4,14 +4,14 @@
   <div class="item">
     <div id="timeline">
       <div>
-        <%for(let i=0; i<eduDet.length; i++){%>
+        <%for(let i=0; i<eduArr.length; i++){%>
           <section class="year">
-            <h3><%= eduDet[i].year %></h3>
-            <%for(let j=0; j<eduDet[i].details.length; j++){%>
+            <h3><%= eduArr[i].year %></h3>
+            <%for(let j=0; j<eduArr[i].details.length; j++){%>
               <section>
                 <ul>
-                  <li><%= eduDet[i].details[j].title %>
-                    <p><%= eduDet[i].details[j].courseProvider%> <br> <a title="Certificate" class="btn-edu" href= <%= eduDet[i].details[j].certi %> ><i class="fas fa-award"></i></a>
+                  <li><%= eduArr[i].details[j].title %>
+                    <p><%= eduArr[i].details[j].courseProvider%> <br> <a title="Certificate" class="btn-edu" href= <%= eduArr[i].details[j].certi %> ><i class="fas fa-award"></i></a>
                     </p>
                   </li>
                 </ul>

@@ -129,12 +129,19 @@ div.item {
 }
 #timeline section.year:first-child section {
   margin-top: -1.3em;
-  padding-bottom: 0px;
+  /* before */
+  /* padding-bottom: 0px; */
 }
 #timeline section.year section {
   position: relative;
-  padding-bottom: 1.25em;
-  margin-bottom: 2.2em;
+
+  /* before */
+  /* padding-bottom: 1.25em;
+  margin-bottom: 2.2em; */
+
+  /* after */
+  padding-bottom: 4%;
+  margin-bottom: 5%;
 }
 #timeline section.year section h4 {
   position: absolute;
