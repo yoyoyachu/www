@@ -7,13 +7,17 @@
     font-family: 'Montserrat-Black';
     src: url(../fonts/Montserrat-Black.ttf) format('truetype');
 }
-body{
-    font-size: 18px;
+*{
     margin: 0;
     padding: 0;
+}
+body{
+    font-size: 16px;
+    box-sizing: border-box;
     font-family: 'Montserrat-Light';
     color: rgb(65, 65, 65);
     line-height: 1.6;
+    letter-spacing: 0.3px;
 }
 
 h1,
@@ -67,11 +71,31 @@ h1:after {
     color: #17a2b8;
     margin-bottom: 10px;
 }
+/* btns for links */
+
+.btn-linksIcon-all{
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: white;
+    text-decoration: none;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 4%;
+}
+.btn-linksIcon-all:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
 
 /* navbar */
 .nav-logo {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     color: black;
 }
 
@@ -109,11 +133,6 @@ h1:after {
 }
 
 
-/* aboutme-intro */
-.aboutme-intro{
-    padding: 2%;
-    font-size: 150%;
-}
 
 
 
@@ -150,7 +169,7 @@ h1:after {
 
 .footer-div {
     background-color: rgb(65, 65, 65);
-    padding: 30px 50px 30px 50px;
+    padding: 15px 50px 15px 50px;
 }
 
 .footer-links {

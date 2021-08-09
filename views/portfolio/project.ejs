@@ -1,14 +1,14 @@
 <% layout('layouts/boilerplate')%>
 <div class="container section-project">
-    <h1 class="text-center m-5">PROJECTS</h1> 
+    <h1 class="text-center m-4">PROJECTS</h1> 
     <% for(let i=0; i<projArr.length; i++){%>
         <div class="row project-container">
             <div class="col-md-6 project-description-container">
                 <div class="project-title"><%= projArr[i].title%></div>
                 <div class="project-description"><%= projArr[i].description%></div>
                 <div class="project-links">
-                    <a class="btn-project " target="_blank" href=<%= projArr[i].projLink%> > <i class="fas fa-link"></i></a>
-                    <a class="btn-project" target="_blank" href=<%= projArr[i].gitLink%> > <i class="fab fa-github"></i></a>
+                    <a class="btn-linksIcon-all btn-project " target="_blank" href=<%= projArr[i].projLink%> > <i class="fas fa-link"></i></a>
+                    <a class="btn-linksIcon-all btn-project" target="_blank" href=<%= projArr[i].gitLink%> > <i class="fab fa-github"></i></a>
                 </div>
             </div>
             <div class="col-md-6 project-img-container"> 

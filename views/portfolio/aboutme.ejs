@@ -1,39 +1,64 @@
 <% layout('layouts/boilerplate')%>
-<div class="aboutme-container">
-    <h1 class="m-5">About Me</h1>
-    <div class="container edu-section">
-        <h2 class="edu-heading">Education:</h2>
-        <div class="row edu-row">
-            <%for(let i=0; i<eduDetails.length; i++){%>
-                <div class="col-md-6 edu-col">
-                    <!-- <i class="fa fa-calculator icon-big"></i>             -->
-                    <div class="edu-title"><%= eduDetails[i].title %></div>
-                    <div class=""><%= eduDetails[i].universityName %></div>
-                    <div class="aligned-justify-text edu-year"><%= eduDetails[i].universityYear%></div>
-                    <a title="Certificate" class="btn-edu" href= <%= eduDetails[i].certi %>><i class="fas fa-award"></i></a>
-                </div>
-            <%}%>
+<div class="edu-container">
+    <h1 class="mt-4">Education</h1>
+    <div class="edu-item">
+        <div id="timeline">
+            <div>
+                <%for(let i=0; i<eduArr.length; i++){%>
+                    <section class="year">
+                        <h3><%= eduArr[i].year %></h3>
+                        <%for(let j=0; j<eduArr[i].details.length; j++){%>
+                            <section>
+                                <ul>
+                                    <li><%= eduArr[i].details[j].title %>
+                                        <p><%= eduArr[i].details[j].courseProvider%> <br> <a title="Certificate" class="btn-linksIcon-all btn-edu" href=<%= eduArr[i].details[j].certi %>><i class="fas fa-award"></i></a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </section>
+                        <%}%>
+                    </section>
+                <%}%>
+            </div>
         </div>
-    </div>
-
-
-
-
-    <div class="container aboutme-intro">
-
-        <p>I grew up in a small town called Navsari in the state of Gujarat. I went to college for Electronics and Communication Engineering at L.D. College of Engineering in the big city of Ahmedabad. Growing up I stayed within half an hour of my home the whole time because you could literally walk out of Navsari within just 30mins. It was such a small town compared to Ahmedabad.</p>
-
-        <p>I lived along with other girls from the same college as a paying guest in Ahmedabad. Living by myself, I learned to manage my time between College studies, time with my roommates, house work, and occasionally for 8 hour train rides going back home to see my parents on occasions.</p>
-
-        <p>I got married and immigrated to the United States in 2019. As soon as I got my papers to work, I started working at my  local Dunkin Donuts so I could earn some money to continue my education online. People here are very nice and I learned how to interact in a more american way by working at Dunkin. The donuts were great too. I learned to manage my time between home and work while working full time, something I hadn't done before. But realizing how little time I could devote to studying, I stopped working at Dunkin to spend more time on my self-study courses.</p>
-
-        <p>I started on HTML and CSS first and got decent at it quickly. I could center divs all day long. As I went into Javascript, I decided to take a full time job at Walgreens to get a little extra money on the side. Since the Walgreens I worked in was in Passaic, NJ one of the hottest places for COVID I decided it was not safe to continue working and instead decided to concentrate on just web development.</p>
-
-        <p>Javascript brings structure and being able to see the structure playout in front of you on a browser was very rewarding. I continued to take online courses and read O’Reilly books to learn and try out new projects. The pandemic gave me plenty of time to learn web development and armed with HTML, CSS, Javascript, PHP, MySQL, PostgreSQL, MongoDB I’ve developed a variety of different projects to demonstrate my skills.</p>
-
-        <p>Please check them out in the Projects Page.</p>
-
     </div>
 </div>
 
 
+
+
+
+<div class="container aboutme-container">
+    <h2 class="">About Me</h2>
+    <p>I grew up in a small town called Navsari in the state of Gujarat. I went to college for Electronics and
+        Communication Engineering at L.D. College of Engineering in the big city of Ahmedabad. Growing up I stayed
+        within half an hour of my home the whole time because you could literally walk out of Navsari within just
+        30mins. It was such a small town compared to Ahmedabad.</p>
+
+    <p>I lived along with other girls from the same college as a paying guest in Ahmedabad. Living by myself, I learned
+        to manage my time between College studies, time with my roommates, house work, and occasionally for 8 hour train
+        rides going back home to see my parents on occasions.</p>
+
+    <p>I got married and immigrated to the United States in 2019. As soon as I got my papers to work, I started working
+        at my local Dunkin Donuts so I could earn some money to continue my education online. People here are very nice
+        and I learned how to interact in a more american way by working at Dunkin. The donuts were great too. I learned
+        to manage my time between home and work while working full time, something I hadn't done before. But realizing
+        how little time I could devote to studying, I stopped working at Dunkin to spend more time on my self-study
+        courses.</p>
+
+    <p>I started on HTML and CSS first and got decent at it quickly. I could center divs all day long. As I went into
+        Javascript, I decided to take a full time job at Walgreens to get a little extra money on the side. Since the
+        Walgreens I worked in was in Passaic, NJ one of the hottest places for COVID I decided it was not safe to
+        continue working and instead decided to concentrate on just web development.</p>
+
+    <p>Javascript brings structure and being able to see the structure playout in front of you on a browser was very
+        rewarding. I continued to take online courses and read O’Reilly books to learn and try out new projects. The
+        pandemic gave me plenty of time to learn web development and armed with HTML, CSS, Javascript, PHP, MySQL,
+        PostgreSQL, MongoDB I’ve developed a variety of different projects to demonstrate my skills.</p>
+
+    <p>Please check them out in the Projects Page.</p>
+
+</div>
+</div>
+
+<script src="/jscript/timeline.js"></script>

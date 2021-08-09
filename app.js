@@ -4,7 +4,6 @@ const path = require('path');
 const ejs = require('ejs');
 const ejsMate = require('ejs-mate');
 const projArr = require('./public/static/project-details');
-const eduDetails = require('./public/static/education-details');
 const eduArr = require('./public/static/edu-details');
 
 
@@ -18,13 +17,10 @@ app.get('/',(req,res)=>{
     res.render('portfolio/index')
 });
 app.get('/aboutme',(req,res)=>{
-    res.render('portfolio/aboutme', {eduDetails})
+    res.render('portfolio/aboutme', {eduArr})
 });
 app.get('/project',(req,res)=>{
     res.render('portfolio/project', {projArr})
-});
-app.get('/timeline',(req,res)=>{
-    res.render('portfolio/timeline', {eduArr})
 });
 app.listen(3000,()=>{
     console.log('on port 3000')
