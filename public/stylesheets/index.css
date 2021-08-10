@@ -17,7 +17,7 @@ body{
     /* font-family: 'Montserrat-Light'; */
     font-family: 'Mulish', sans-serif;
     color: rgb(65, 65, 65);
-    line-height: 1.6;
+    line-height: 1.5em;
     letter-spacing: 0.3px;
 }
 
@@ -79,7 +79,7 @@ h1:after {
     border: none;
     color: white;
     text-decoration: none;
-    display: inherit;
+    display: flex;
     align-items: center;
     justify-content: center;
     transition-duration: 0.4s;
@@ -120,8 +120,11 @@ h1:after {
     transition: 0.3s ease-in;
 }
 
-
-
+/* blinking cursor */
+.blinking-cursor{
+    margin-left: 1px;
+    color: #17a2b8;
+}
 
 
 
@@ -132,22 +135,18 @@ h1:after {
     height: 100vh;
 }
 .landing-container{
-    height: 40%;
+    height: 45%;
 }
 .landing-section{
-    background-image:linear-gradient(to top right,rgb(235, 232, 232), #17a2b8);   
+    /* background-image:linear-gradient(to top right,rgb(223, 253, 199), #41a8b8);    */
     display: flex; 
     flex-direction: column;
-    /* justify-content: space-around; */
-    /* align-items: center; */
-    /* font-size: 180%; */
-    /* padding: 5%; */
 }
 .index-intro-name{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 300%;
+    font-size: 250%;
     height: 50%;
     /* background-color: #888; */
 }
@@ -160,8 +159,22 @@ h1:after {
     /* background-color: #e18aec; */
 }
 .index-intro-title{
-    font-size: 150%;
+    font-size: 130%;
 }
+
+.icon-landing {
+    color: rgb(65, 65, 65);
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+.index-intro-city .icon-landing:last-of-type{
+    margin-right: 5px;
+}     
+
 .landing-img{
     /* background-color: #00aced; */
     background-image: url('https://cdn.yachna.net/project-imgs/yachna-index1.jpg');
@@ -172,6 +185,7 @@ h1:after {
     zoom: inherit; 
 }
 .index-intro-container{
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -185,6 +199,79 @@ h1:after {
     text-align: justify;
 }
 
+/* ----------------------------------------------------------------------------- */
+/* links hover effect on index page */
+/* ----------------------------------------------------------------------------- */
+.links-ul {
+    display: flex;
+    /* margin-bottom: 0px; */
+    padding-left: 0px;
+}
+
+.links-ul li {
+    list-style: none;
+}
+
+.links-ul li a {
+    width: 70px;
+    height: 70px;
+    background-color: rgb(65,65,65);
+    text-align: center;
+    line-height: 65px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+    margin-top: 5%;
+}
+
+.links-ul li a .icon {
+    position: relative;
+    color: white;
+    transition: .5s;
+    z-index: 3;
+}
+
+.links-ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
+.links-ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+}
+
+.links-ul li a:hover:before {
+    top: 0;
+}
+
+.links-ul li:nth-child(1) a:before {
+    background: #3b5999;
+}
+
+.links-ul li:nth-child(2) a:before {
+    background: #55acee;
+}
+
+.links-ul li:nth-child(3) a:before {
+    background: #0077b5;
+}
+
+.links-ul li:nth-child(4) a:before {
+    background: #dd4b39;
+}
 
 
 
