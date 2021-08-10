@@ -135,7 +135,7 @@ h1:after {
     height: 40%;
 }
 .landing-section{
-    /* background-image:linear-gradient(to top right,rgb(235, 232, 232), #17a2b8);    */
+    background-image:linear-gradient(to top right,rgb(235, 232, 232), #17a2b8);   
     display: flex; 
     flex-direction: column;
     /* justify-content: space-around; */
