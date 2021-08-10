@@ -36,28 +36,28 @@
     align-items: center;
 }
 #project-img-weather{
-    background-image: url('../images/weather1.png');
+    background-image: url('https://cdn.yachna.net/project-imgs/weather.png');
 }
 #project-img-fardah{
-    background-image: url('../images/fardah.png');
+    background-image: url('https://cdn.yachna.net/project-imgs/fardah.png');
 }
 #project-img-yelp{
-    background-image: url('../images/yelp.png');
+    background-image: url('https://cdn.yachna.net/project-imgs/yelp.png');
 }
 #project-img-coin{
-    background-image: url('../images/coin.png');
+    background-image: url('https://cdn.yachna.net/project-imgs/coin.png');
 }
 #project-img-lights{
-    background-image: url('../images/lights.png');
+    background-image: url('https://cdn.yachna.net/project-imgs/lights.png');
 }
 #project-img-todo{
-    background-image: url('../images/todo.png');
+    background-image: url('https://cdn.yachna.net/project-imgs/todo.png');
 }
 #project-img-hangman{
-    background-image: url('../images/hangman.png');
+    background-image: url('https://cdn.yachna.net/project-imgs/hangman.png');
 }
 #project-img-lottery{
-    background-image: url('../images/lottery.png');
+    background-image: url('https://cdn.yachna.net/project-imgs/lottery.png');
 }
 .project-img{
     background-position: center;

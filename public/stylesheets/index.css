@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Montserrat-Light';
     src: url(../fonts/Montserrat-Light.ttf) format('truetype');
 }
@@ -6,15 +6,16 @@
 @font-face {
     font-family: 'Montserrat-Black';
     src: url(../fonts/Montserrat-Black.ttf) format('truetype');
-}
+} */
 *{
     margin: 0;
     padding: 0;
 }
 body{
-    font-size: 16px;
+    font-size: 20px;
     box-sizing: border-box;
-    font-family: 'Montserrat-Light';
+    /* font-family: 'Montserrat-Light'; */
+    font-family: 'Mulish', sans-serif;
     color: rgb(65, 65, 65);
     line-height: 1.6;
     letter-spacing: 0.3px;
@@ -22,7 +23,7 @@ body{
 
 h1,
 h2 {
-    font-family: 'Montserrat-Black';
+    /* font-family: 'Montserrat-Black'; */
     text-transform: uppercase;
 }
 
@@ -126,34 +127,63 @@ h1:after {
 
 
 
-/* home-intro */
-.home-intro{
-    padding: 2%;
+/*---------------- index page -------------------*/
+.index-container{
+    height: 100vh;
+}
+.landing-container{
+    height: 40%;
+}
+.landing-section{
+    /* background-image:linear-gradient(to top right,rgb(235, 232, 232), #17a2b8);    */
+    display: flex; 
+    flex-direction: column;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* font-size: 180%; */
+    /* padding: 5%; */
+}
+.index-intro-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 300%;
+    height: 50%;
+    /* background-color: #888; */
+}
+.landing-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    /* background-color: #e18aec; */
+}
+.index-intro-title{
     font-size: 150%;
 }
-
-
-
-
-
-
-
-
-
-
-.intro-icons{
-    color: #17a2b8;
-    display: inline-block;
-    /* width: 30px; */
-    text-align: center;
-    font-size: 230%;
-    margin-right: 10px;
-    /* secrets to align text and icons */
-    line-height: 120%;
-    vertical-align: middle;
-    margin-top: -5px;
+.landing-img{
+    /* background-color: #00aced; */
+    background-image: url('https://cdn.yachna.net/project-imgs/yachna-index1.jpg');
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    zoom: inherit; 
 }
-
+.index-intro-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 50%;
+}
+.index-intro{
+    /* border: 2px dotted black; */
+    padding: 3%;
+    text-align: justify;
+}
 
 
 
