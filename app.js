@@ -22,6 +22,9 @@ app.get('/aboutme',(req,res)=>{
 app.get('/project',(req,res)=>{
     res.render('portfolio/project', {projArr})
 });
+app.get('/try',(req,res)=>{
+    res.render('portfolio/try')
+});
 app.listen(3000,()=>{
     console.log('on port 3000')
 });

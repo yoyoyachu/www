@@ -7,11 +7,14 @@
     font-family: 'Montserrat-Black';
     src: url(../fonts/Montserrat-Black.ttf) format('truetype');
 } */
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+.abc{
+    font-size: 200%;
+}
+body {
     font-size: 20px;
     box-sizing: border-box;
     /* font-family: 'Montserrat-Light'; */
@@ -66,15 +69,16 @@ h1:after {
     margin-top: -5px;
 }
 
-.icon-big{
+.icon-big {
     font-size: 320%;
     display: block;
     color: #17a2b8;
     margin-bottom: 10px;
 }
+
 /* btns for links */
 
-.btn-linksIcon-all{
+.btn-linksIcon-all {
     background-color: rgb(0, 0, 0);
     border: none;
     color: white;
@@ -87,6 +91,7 @@ h1:after {
     border-radius: 5px;
     margin-right: 4%;
 }
+
 .btn-linksIcon-all:hover {
     background-color: white;
     color: rgb(0, 0, 0);
@@ -121,7 +126,7 @@ h1:after {
 }
 
 /* blinking cursor */
-.blinking-cursor{
+.blinking-cursor {
     margin-left: 1px;
     color: #17a2b8;
 }
@@ -131,18 +136,21 @@ h1:after {
 
 
 /*---------------- index page -------------------*/
-.index-container{
+.index-container {
     height: 100vh;
 }
-.landing-container{
+
+.landing-container {
     height: 45%;
 }
-.landing-section{
+
+.landing-section {
     /* background-image:linear-gradient(to top right,rgb(223, 253, 199), #41a8b8);    */
-    display: flex; 
+    display: flex;
     flex-direction: column;
 }
-.index-intro-name{
+
+.index-intro-name {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,7 +158,8 @@ h1:after {
     height: 50%;
     /* background-color: #888; */
 }
-.landing-details{
+
+.landing-details {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -158,7 +167,8 @@ h1:after {
     height: 50%;
     /* background-color: #e18aec; */
 }
-.index-intro-title{
+
+.index-intro-title {
     font-size: 130%;
 }
 
@@ -171,20 +181,22 @@ h1:after {
     vertical-align: middle;
     margin-top: -5px;
 }
-.index-intro-city .icon-landing:last-of-type{
-    margin-right: 5px;
-}     
 
-.landing-img{
+.index-intro-city .icon-landing:last-of-type {
+    margin-right: 5px;
+}
+
+.landing-img {
     /* background-color: #00aced; */
     background-image: url('https://cdn.yachna.net/project-imgs/yachna-index1.jpg');
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    zoom: inherit; 
+    zoom: inherit;
 }
-.index-intro-container{
+
+.index-intro-container {
     margin-top: 5%;
     display: flex;
     flex-direction: column;
@@ -193,11 +205,45 @@ h1:after {
     width: 60%;
     height: 50%;
 }
-.index-intro{
+
+.index-intro {
     /* border: 2px dotted black; */
     padding: 3%;
     text-align: justify;
 }
+
+#tag-html{
+    color: #f06529;
+    font-weight: bolder;
+}
+#tag-css{
+    color: #264de4;
+    font-weight: bolder;
+}
+#tag-php{
+    color: #787CB5;
+    font-weight: bolder;
+}
+#tag-js{
+    color: #d6c139;
+    font-weight: bolder;
+}
+#tag-mysql{
+    color: #00758F;
+    font-weight: bolder;
+}
+#tag-postgre{
+    color: #008bb9;
+    font-weight: bolder;
+}
+#tag-mongo{
+    color: #3FA037;
+    font-weight: bolder;
+}
+
+
+
+
 
 /* ----------------------------------------------------------------------------- */
 /* links hover effect on index page */
@@ -215,7 +261,7 @@ h1:after {
 .links-ul li a {
     width: 70px;
     height: 70px;
-    background-color: rgb(65,65,65);
+    background-color: rgb(65, 65, 65);
     text-align: center;
     line-height: 65px;
     font-size: 35px;
@@ -224,7 +270,7 @@ h1:after {
     border-radius: 50%;
     position: relative;
     overflow: hidden;
-    border: 3px solid #fff;
+    border: 3px solid rgb(65, 65, 65);
     z-index: 1;
     margin-top: 5%;
 }
@@ -262,16 +308,33 @@ h1:after {
 }
 
 .links-ul li:nth-child(2) a:before {
-    background: #55acee;
+    background: #3a8a37;
 }
 
 .links-ul li:nth-child(3) a:before {
-    background: #0077b5;
+    background: #ff878d;
 }
 
 .links-ul li:nth-child(4) a:before {
     background: #dd4b39;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -364,7 +427,8 @@ footer p {
     text-align: center;
     margin-top: 20px;
 }
-.footer-copyrights{
+
+.footer-copyrights {
     /* color: #888; */
     color: white;
 }
@@ -381,21 +445,13 @@ footer p {
 
 
 /*big tablet to big screen:width 1024px to 1200px  */
-@media only screen and (max-width:1200px) {
-    
-}
-  
-/*small tablet to big tablet(portrait):width 768px to 1023px  */
-@media only screen and (max-width:1023px) {
+@media only screen and (max-width:1200px) {}
 
-}
-  
+/*small tablet to big tablet(portrait):width 768px to 1023px  */
+@media only screen and (max-width:1023px) {}
+
 /*big phones to small tablet:width 481px to 767px */
-@media only screen and (max-width:767px) {
-    
-}
+@media only screen and (max-width:767px) {}
 
 /*small phones :upto width 480px  */
-@media only screen and (max-width:480px) {
-    
-}
+@media only screen and (max-width:480px) {}

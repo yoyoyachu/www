@@ -14,5 +14,20 @@ $(document).ready(function () {
     })(jQuery);
     // input text for typing animation
     $("#city").writeText("Greater New York City Area");
-    $("#job").writeText("Web Developer")
+    $("#job").writeText("Web Developer");
+
+
+    $(".tag-skills").on("mouseover", function(){
+        $(this).css({"font-size" :  "120%", "font-weight" : "bolder", "transition" : "all 400ms"});
+        // $(this).addClass('animate__animated animate__fadeIn');
+    });
+    $(".tag-skills").on("mouseout", function(){
+        $(this).css({"font-size" :  "100%", "font-weight" : "regular", "transition" : "0ms"});
+        // $(this).removeClass('animate__animated animate__fadeIn');
+        
+    });
+    
 });
+
+
+

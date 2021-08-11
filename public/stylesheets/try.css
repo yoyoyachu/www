@@ -1,0 +1,82 @@
+.ball {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #ff0066;
+    margin-left: -5px;
+    transition-property: left, top;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1), cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+p {
+    position: relative;
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    font-size: 40px;
+    outline: none;
+}
+
+.word.lit {
+    color: #ff0066;
+    text-shadow: 0px 0px 1px #ff0066;
+}
+
+.container {
+    width: 1280px;
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+.hint {
+    width: 350px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    background: #ddd;
+    color: #666;
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    margin-left: -175px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: default;
+}
+
+.hint:not(.preload) {
+    transition: top 1s;
+}
+
+.hint.open {
+    top: 0px;
+}
+
+.hint>i {
+    margin: 0 5px;
+    background: #ccc;
+    color: #222;
+    border-radius: 100%;
+    display: inline-block;
+    line-height: 17px;
+    width: 17px;
+    height: 17px;
+}
+
+body {
+    background: #eee;
+    color: #222;
+    font-family: "Alef", sans-serif;
+    padding-top: 100px;
+}
+
+body.dark {
+    background: #222;
+}
