@@ -1,23 +1,11 @@
-/* @font-face {
-    font-family: 'Montserrat-Light';
-    src: url(../fonts/Montserrat-Light.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Montserrat-Black';
-    src: url(../fonts/Montserrat-Black.ttf) format('truetype');
-} */
 * {
     margin: 0;
     padding: 0;
 }
-.abc{
-    font-size: 200%;
-}
+
 body {
     font-size: 20px;
     box-sizing: border-box;
-    /* font-family: 'Montserrat-Light'; */
     font-family: 'Mulish', sans-serif;
     color: rgb(65, 65, 65);
     line-height: 1.5em;
@@ -26,7 +14,6 @@ body {
 
 h1,
 h2 {
-    /* font-family: 'Montserrat-Black'; */
     text-transform: uppercase;
 }
 
@@ -99,6 +86,7 @@ h1:after {
 }
 
 /* navbar */
+
 .nav-logo {
     width: 70px;
     height: 70px;
@@ -108,20 +96,18 @@ h1:after {
 #logo-title {
     color: #17a2b8;
     font-weight: bolder;
-    /* text-shadow: 0.5px 0.5px 3px #89d0ff; */
 }
 
 .nav-link {
     padding: 0.25rem 0;
     font-weight: 700;
-    color: rgb(65, 65, 65);
+    color: black;
     margin-left: 2rem;
     border-bottom: 0.25rem solid transparent;
 }
 
 .nav-link:hover {
     color: black;
-    /* text-shadow: 2px 2px 1px rgb(170, 167, 167); */
     transition: 0.3s ease-in;
 }
 
@@ -141,7 +127,7 @@ h1:after {
 }
 
 .landing-container {
-    height: 45%;
+    height: 40%;
 }
 
 .landing-section {
@@ -155,7 +141,7 @@ h1:after {
     justify-content: center;
     align-items: center;
     font-size: 250%;
-    height: 50%;
+    height: 45%;
     /* background-color: #888; */
 }
 
@@ -164,7 +150,7 @@ h1:after {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 50%;
+    height: 55%;
     /* background-color: #e18aec; */
 }
 
@@ -197,17 +183,16 @@ h1:after {
 }
 
 .index-intro-container {
-    margin-top: 5%;
+    margin-top: 3%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 60%;
-    height: 50%;
+    height: 60%;
 }
 
 .index-intro {
-    /* border: 2px dotted black; */
     padding: 3%;
     text-align: justify;
 }
@@ -445,10 +430,17 @@ footer p {
 
 
 /*big tablet to big screen:width 1024px to 1200px  */
-@media only screen and (max-width:1200px) {}
+@media only screen and (max-width:1200px) {
+
+}
 
 /*small tablet to big tablet(portrait):width 768px to 1023px  */
-@media only screen and (max-width:1023px) {}
+@media only screen and (max-width:1023px) {
+    .index-intro-container {
+        margin-top: 3%;
+        width: 70%;
+    }
+}
 
 /*big phones to small tablet:width 481px to 767px */
 @media only screen and (max-width:767px) {}
