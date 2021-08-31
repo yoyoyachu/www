@@ -121,113 +121,6 @@ h1:after {
 
 
 
-/*---------------- index page -------------------*/
-.index-container {
-    height: 100vh;
-}
-
-.landing-container {
-    height: 40%;
-}
-
-.landing-section {
-    /* background-image:linear-gradient(to top right,rgb(223, 253, 199), #41a8b8);    */
-    display: flex;
-    flex-direction: column;
-}
-
-.index-intro-name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 250%;
-    height: 45%;
-    /* background-color: #888; */
-}
-
-.landing-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 55%;
-    /* background-color: #e18aec; */
-}
-
-.index-intro-title {
-    font-size: 130%;
-}
-
-.icon-landing {
-    color: rgb(65, 65, 65);
-    display: inline-block;
-    width: 30px;
-    text-align: center;
-    margin-right: 10px;
-    vertical-align: middle;
-    margin-top: -5px;
-}
-
-.index-intro-city .icon-landing:last-of-type {
-    margin-right: 5px;
-}
-
-.landing-img {
-    /* background-color: #00aced; */
-    background-image: url('https://cdn.yachna.net/project-imgs/yachna-index1.jpg');
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    zoom: inherit;
-}
-
-.index-intro-container {
-    margin-top: 3%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    height: 60%;
-}
-
-.index-intro {
-    padding: 3%;
-    text-align: justify;
-}
-
-#tag-html{
-    color: #f06529;
-    font-weight: bolder;
-}
-#tag-css{
-    color: #264de4;
-    font-weight: bolder;
-}
-#tag-php{
-    color: #787CB5;
-    font-weight: bolder;
-}
-#tag-js{
-    color: #d6c139;
-    font-weight: bolder;
-}
-#tag-mysql{
-    color: #00758F;
-    font-weight: bolder;
-}
-#tag-postgre{
-    color: #008bb9;
-    font-weight: bolder;
-}
-#tag-mongo{
-    color: #3FA037;
-    font-weight: bolder;
-}
-
-
-
 
 
 /* ----------------------------------------------------------------------------- */
@@ -235,7 +128,7 @@ h1:after {
 /* ----------------------------------------------------------------------------- */
 .links-ul {
     display: flex;
-    /* margin-bottom: 0px; */
+    margin-bottom: 0px;
     padding-left: 0px;
 }
 
@@ -424,6 +317,108 @@ footer p {
 
 
 
+/*---------------- index page -------------------*/
+.landing-container {
+    height: 350px;
+}
+
+.landing-section {
+    /* background-image:linear-gradient(to top right,rgb(223, 253, 199), #41a8b8);    */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.index-intro-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 300%;
+    height: 50%;
+    /* background-color: #888; */
+}
+
+.landing-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    /* background-color: #e18aec; */
+}
+
+.index-intro-title {
+    font-size: 130%;
+}
+
+.icon-landing {
+    color: rgb(65, 65, 65);
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+.index-intro-city .icon-landing:last-of-type {
+    margin-right: 5px;
+}
+
+.landing-img {
+    /* background-color: #00aced; */
+    background-image: url('https://cdn.yachna.net/project-imgs/yachna-index1.jpg');
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    zoom: inherit;
+}
+
+.index-intro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.index-h3{
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+.index-intro {
+    text-align: justify;
+}
+
+#tag-html{
+    color: #f06529;
+    font-weight: bolder;
+}
+#tag-css{
+    color: #264de4;
+    font-weight: bolder;
+}
+#tag-php{
+    color: #787CB5;
+    font-weight: bolder;
+}
+#tag-js{
+    color: #d6c139;
+    font-weight: bolder;
+}
+#tag-mysql{
+    color: #00758F;
+    font-weight: bolder;
+}
+#tag-postgre{
+    color: #008bb9;
+    font-weight: bolder;
+}
+#tag-mongo{
+    color: #3FA037;
+    font-weight: bolder;
+}
+
 
 
 
@@ -431,19 +426,36 @@ footer p {
 
 /*big tablet to big screen:width 1024px to 1200px  */
 @media only screen and (max-width:1200px) {
-
-}
-
-/*small tablet to big tablet(portrait):width 768px to 1023px  */
-@media only screen and (max-width:1023px) {
     .index-intro-container {
-        margin-top: 3%;
         width: 70%;
     }
 }
 
+/*small tablet to big tablet(portrait):width 768px to 1023px  */
+@media only screen and (max-width:1023px) {
+
+}
+
 /*big phones to small tablet:width 481px to 767px */
-@media only screen and (max-width:767px) {}
+@media only screen and (max-width:767px) {
+    body{
+        font-size: 18px;
+    }
+    .landing-container {
+        height: 600px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .landing-section{
+        height: 50%;
+    }
+    .landing-img{
+        height: 50%;
+    }
+    .index-intro-container {
+        width: 100%;
+    }
+}
 
 /*small phones :upto width 480px  */
 @media only screen and (max-width:480px) {}
