@@ -25,7 +25,8 @@ app.get('/project',(req,res)=>{
 app.get('/try',(req,res)=>{
     res.render('portfolio/try')
 });
-app.listen(3000,()=>{
-    console.log('on port 3000')
-});
 
+const port = process.env.PORT || 3000
+app.listen(port, () => {
+    console.log(`Listening on port ${port}`)
+});
