@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 20px;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    color: rgb(65, 65, 65);
+    line-height: 1.5em;
+    letter-spacing: 0.3px;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h1:after {
+    display: block;
+    height: 3px;
+    background-color: #17a2b8;
+    content: " ";
+    width: 130px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.icon-small {
+    color: #17a2b8;
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    font-size: 120%;
+    margin-right: 10px;
+    /* secrets to align text and icons */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+.icon-big {
+    font-size: 320%;
+    display: block;
+    color: #17a2b8;
+    margin-bottom: 10px;
+}
+
+/* btns for links */
+
+.btn-linksIcon-all {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 4%;
+}
+
+.btn-linksIcon-all:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* navbar */
+
+.nav-logo {
+    width: 70px;
+    height: 70px;
+    color: black;
+}
+
+#logo-title {
+    color: #17a2b8;
+    font-weight: bolder;
+}
+
+.nav-link {
+    padding: 0.25rem 0;
+    font-weight: 700;
+    color: black;
+    margin-left: 2rem;
+    border-bottom: 0.25rem solid transparent;
+}
+
+.nav-link:hover {
+    color: black;
+    transition: 0.3s ease-in;
+}
+
+/* blinking cursor */
+.blinking-cursor {
+    margin-left: 1px;
+    color: #17a2b8;
+}
+
+
+
+
+
+/*---------------- index page -------------------*/
+.index-container {
+    height: 100vh;
+}
+
+.landing-container {
+    height: 40%;
+}
+
+.landing-section {
+    /* background-image:linear-gradient(to top right,rgb(223, 253, 199), #41a8b8);    */
+    display: flex;
+    flex-direction: column;
+}
+
+.index-intro-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 250%;
+    height: 45%;
+    /* background-color: #888; */
+}
+
+.landing-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 55%;
+    /* background-color: #e18aec; */
+}
+
+.index-intro-title {
+    font-size: 130%;
+}
+
+.icon-landing {
+    color: rgb(65, 65, 65);
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+.index-intro-city .icon-landing:last-of-type {
+    margin-right: 5px;
+}
+
+.landing-img {
+    /* background-color: #00aced; */
+    background-image: url('https://cdn.yachna.net/project-imgs/yachna-index1.jpg');
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    zoom: inherit;
+}
+
+.index-intro-container {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 60%;
+}
+
+.index-intro {
+    padding: 3%;
+    text-align: justify;
+}
+
+#tag-html{
+    color: #f06529;
+    font-weight: bolder;
+}
+#tag-css{
+    color: #264de4;
+    font-weight: bolder;
+}
+#tag-php{
+    color: #787CB5;
+    font-weight: bolder;
+}
+#tag-js{
+    color: #d6c139;
+    font-weight: bolder;
+}
+#tag-mysql{
+    color: #00758F;
+    font-weight: bolder;
+}
+#tag-postgre{
+    color: #008bb9;
+    font-weight: bolder;
+}
+#tag-mongo{
+    color: #3FA037;
+    font-weight: bolder;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------- */
+/* links hover effect on index page */
+/* ----------------------------------------------------------------------------- */
+.links-ul {
+    display: flex;
+    /* margin-bottom: 0px; */
+    padding-left: 0px;
+}
+
+.links-ul li {
+    list-style: none;
+}
+
+.links-ul li a {
+    width: 70px;
+    height: 70px;
+    background-color: rgb(65, 65, 65);
+    text-align: center;
+    line-height: 65px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid rgb(65, 65, 65);
+    z-index: 1;
+    margin-top: 5%;
+}
+
+.links-ul li a .icon {
+    position: relative;
+    color: white;
+    transition: .5s;
+    z-index: 3;
+}
+
+.links-ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
+.links-ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+}
+
+.links-ul li a:hover:before {
+    top: 0;
+}
+
+.links-ul li:nth-child(1) a:before {
+    background: #3b5999;
+}
+
+.links-ul li:nth-child(2) a:before {
+    background: #3a8a37;
+}
+
+.links-ul li:nth-child(3) a:before {
+    background: #ff878d;
+}
+
+.links-ul li:nth-child(4) a:before {
+    background: #dd4b39;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------- */
+/* FOOTER*/
+/* ----------------------------------------------------------------------------- */
+
+.footer-div {
+    background-color: rgb(65, 65, 65);
+    padding: 15px 50px 15px 50px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-nav {
+    list-style: none;
+}
+
+.social-links {
+    list-style: none;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    color: white;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.fa-linkedin,
+.fa-github-square,
+.fa-envelope {
+    transition: color 0.2s;
+}
+
+.fa-linkedin:hover {
+    color: #4161a9;
+}
+
+.fa-github-square:hover {
+    color: #00aced;
+}
+
+
+
+.fa-envelope:hover {
+    color: #e18aec;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-copyrights {
+    /* color: #888; */
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*big tablet to big screen:width 1024px to 1200px  */
+@media only screen and (max-width:1200px) {
+
+}
+
+/*small tablet to big tablet(portrait):width 768px to 1023px  */
+@media only screen and (max-width:1023px) {
+    .index-intro-container {
+        margin-top: 3%;
+        width: 70%;
+    }
+}
+
+/*big phones to small tablet:width 481px to 767px */
+@media only screen and (max-width:767px) {}
+
+/*small phones :upto width 480px  */
+@media only screen and (max-width:480px) {}

@@ -1,0 +1,151 @@
+/*--------------------btns for github and link icon-------------------*/
+.btn-project {
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+}
+
+.project-links{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section-project{
+    width: 70%;
+}
+
+.project-container{
+    justify-content: space-evenly;
+    margin:3% 0;
+    height: 350px;
+}
+.project-container:hover{
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    opacity: 0.9;
+}
+.project-description-container{
+    padding: 1% 1% 1% 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.project-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#project-img-weather{
+    background-image: url('https://cdn.yachna.net/project-imgs/weather.png');
+}
+#project-img-fardah{
+    background-image: url('https://cdn.yachna.net/project-imgs/fardah.png');
+}
+#project-img-yelp{
+    background-image: url('https://cdn.yachna.net/project-imgs/yelp.png');
+}
+#project-img-coin{
+    background-image: url('https://cdn.yachna.net/project-imgs/coin.png');
+}
+#project-img-lights{
+    background-image: url('https://cdn.yachna.net/project-imgs/lights.png');
+}
+#project-img-todo{
+    background-image: url('https://cdn.yachna.net/project-imgs/todo.png');
+}
+#project-img-hangman{
+    background-image: url('https://cdn.yachna.net/project-imgs/hangman.png');
+}
+#project-img-lottery{
+    background-image: url('https://cdn.yachna.net/project-imgs/lottery.png');
+}
+.project-img{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    width: 60%;
+    max-height: 100%;
+    height: 60%;
+    border-radius: 5px;
+    transition: transform .3s; /* Animation */
+}
+.project-img:hover{
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.project-title{
+    font-size: 140%;
+    font-weight: 900;
+}
+
+
+
+
+
+
+
+
+/*big tablet to big screen:width 1024px to 1200px  */
+@media only screen and (max-width:1200px) {
+    .section-project{
+        width: 100%;
+    }
+    .project-description-container{
+        padding: 1% 1% 1% 0%;
+    }
+    .project-img{
+        width: 70%;
+    }
+}
+
+/*small tablet to big tablet:width 768px to 1023px   */
+@media only screen and (max-width:1023px) {
+    .project-img{
+        width: 80%;
+    }
+}
+
+/*small phones to small tablet:width 481px to 767px */
+@media only screen and (max-width:768px) {
+    .project-container{
+        height: 500px;
+        border-bottom: 1px solid black;
+    }
+    .project-container:last-child{
+        border-bottom: 0px;
+    }
+    .project-container:hover{
+        border-top: 0px;
+        opacity: 1;
+    }
+    .project-img{
+        height: 230px;
+    }
+    .project-img:hover{
+        transform: scale(1); 
+    }
+    .project-links{
+        justify-content: center;
+    }
+    .project-description-container{
+        text-align: center;
+    }
+    .project-description{
+        text-align: justify;
+        padding: 0% 3%;
+    }
+    .btn-project {
+        height: 50px;
+        width: 50px;
+        margin-left: 4%;
+    }
+}
+
+/*small phones:width less than 480px  */
+@media only screen and (max-width:480px) {
+    .project-img{
+        width: 100%;
+        height: 190px;
+    }
+
+}
