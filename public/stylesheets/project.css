@@ -131,7 +131,7 @@
         text-align: center;
     }
     .project-description{
-        text-align: justify;
+        /* text-align: justify; */
         padding: 0% 3%;
     }
     .btn-project {

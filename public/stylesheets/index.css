@@ -234,13 +234,20 @@ h1:after {
     display: flex;
     justify-content: center;
 }
-
+.footer-links-div .social-links, .footer-links-div .footer-nav{
+    padding-left: 0rem;
+}
 .footer-links-div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+.footer-links-div:first-child{
+    justify-content: flex-start;
+}
+.footer-links-div:last-child{
+    justify-content: flex-end;
+}
 .footer-nav {
     list-style: none;
 }
@@ -357,8 +364,13 @@ footer p {
     width: 30px;
     text-align: center;
     margin-right: 10px;
+    /* secrets to align text and icons */
+    line-height: 120%;
     vertical-align: middle;
     margin-top: -5px;
+
+
+
 }
 
 .index-intro-city .icon-landing:last-of-type {
@@ -387,7 +399,7 @@ footer p {
     margin-bottom: 5%;
 }
 .index-intro {
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 #tag-html{
@@ -441,6 +453,9 @@ footer p {
     body{
         font-size: 18px;
     }
+    .nav-link {
+        margin-left: 0rem;
+    }
     .landing-container {
         height: 600px;
         display: flex;
@@ -458,4 +473,11 @@ footer p {
 }
 
 /*small phones :upto width 480px  */
-@media only screen and (max-width:480px) {}
+@media only screen and (max-width:480px) {
+    .footer-links-div:first-child{
+        justify-content: center;
+    }
+    .footer-links-div:last-child{
+        justify-content: center;
+    }
+}
