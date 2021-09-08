@@ -14,13 +14,16 @@ app.use(express.urlencoded({extended:true}))
 app.use(express.static(path.join(__dirname,'public')))
 
 app.get('/',(req,res)=>{
-    res.render('portfolio/index')
+    // let titleName = 'Yachna Rana';
+    res.render('portfolio/index',{titleName:'Yachna Rana'})
 });
 app.get('/aboutme',(req,res)=>{
-    res.render('portfolio/aboutme', {eduArr})
+    // let titleName = 'About Me';
+    res.render('portfolio/aboutme', {eduArr, titleName:'About Me - Yachna Rana'})
 });
 app.get('/project',(req,res)=>{
-    res.render('portfolio/project', {projArr})
+    // let titleName = 'Projects';
+    res.render('portfolio/project', {projArr, titleName:'Projects - Yachna Rana'})
 });
 app.get('/try',(req,res)=>{
     res.render('portfolio/try')
