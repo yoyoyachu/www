@@ -15,10 +15,6 @@ $(document).ready(function () {
     // input text for typing animation
     $("#city").writeText("Greater New York City Area");
     $("#job").writeText("Web Developer");
-
-
-
-    
 });
 
 
