@@ -19,20 +19,15 @@ app.get('/',(req,res)=>{
 app.get('/aboutme',(req,res)=>{
     res.render('portfolio/aboutme', {eduArr, titleName:'About Me - Yachna Rana'})
 });
-app.get('/project',(req,res)=>{
-    res.render('portfolio/project', {projArr, titleName:'Projects - Yachna Rana'})
+app.get('/projects',(req,res)=>{
+    res.render('portfolio/projects', {projArr, titleName:'Projects - Yachna Rana'})
 });
 app.get('/resume',(req,res)=>{
     res.render('portfolio/resume', {titleName:'Resume - Yachna Rana'})
 });
-app.get('/try',(req,res)=>{
-    res.render('portfolio/try')
-});
-app.listen(3000,()=>{
-    console.log('on port 3000')
-});
 
-const port = process.env.PORT || 3001
+
+const port = process.env.PORT || 3000
 app.listen(port, () => {
     console.log(`Listening on port ${port}`)
 });
