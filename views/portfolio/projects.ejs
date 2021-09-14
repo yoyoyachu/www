@@ -7,8 +7,17 @@
                 <div class="project-title"><%= projArr[i].title%></div>
                 <div class="project-description"><%= projArr[i].description%></div>
                 <div class="project-links">
-                    <a class="btn-linksIcon-all btn-project " target="_blank" href=<%= projArr[i].projLink%> > <i class="fas fa-link"></i></a>
-                    <a class="btn-linksIcon-all btn-project" target="_blank" href=<%= projArr[i].gitLink%> > <i class="fab fa-github"></i></a>
+                    <%if(!projArr[i].devLink) { %>
+                        <a class="btn-linksIcon-all btn-project " target="_blank" href=<%= projArr[i].projLink%> > <i class="fas fa-link"></i></a>
+                        <a class="btn-linksIcon-all btn-project" target="_blank" href=<%= projArr[i].gitLink%> > <i class="fab fa-github"></i></a>
+                    <%}else{%>
+                        <a  class="btn-linksIcon-all btn-project " target="_blank" href=<%= projArr[i].devLink%> > <i class="fas fa-link"></i></a>
+                        <a class="btn-linksIcon-all btn-project " target="_blank" href=<%= projArr[i].projLink%> > <i class="fas fa-link"></i></a>
+                        <a class="btn-linksIcon-all btn-project" target="_blank" href=<%= projArr[i].gitLink%> > <i class="fab fa-github"></i></a>
+                    <%}%>
+                    
+
+
                 </div>
             </div>
             <div class="col-md-6 project-img-container"> 
@@ -17,6 +26,7 @@
         </div>
     <%}%>
 </div>
+
 
 
 
