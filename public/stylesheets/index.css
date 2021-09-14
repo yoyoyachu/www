@@ -198,6 +198,11 @@ h1:after {
 }
 
 
+/* index intro */
+.index-project-linkIntro{
+    text-decoration: none;
+    color: rgb(65, 65, 65);
+}
 
 
 /* resume */
