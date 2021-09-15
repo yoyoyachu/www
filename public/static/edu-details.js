@@ -8,16 +8,16 @@ let eduDetails = [
             'Udemy',
         certi: 
             ''},
-        {title: 'Web Applications for Everybody' , courseProvider: 'Coursera' , certi: 'https://www.coursera.org/account/accomplishments/specialization/certificate/WH86CL5P6ME9'},
+        {title: 'Web Applications for Everybody' , courseProvider: 'University Of Michigan, Coursera' , certi: 'https://www.coursera.org/account/accomplishments/specialization/WH86CL5P6ME9'},
         {title: 'JavaScript, jQuery, and JSON' , courseProvider: 'University Of Michigan, Coursera' , certi: '​​https://www.coursera.org/account/accomplishments/certificate/A2Q6WZUT7RUY'},
     
         {title: 'Building Database Applications in PHP' , courseProvider: 'University Of Michigan, Coursera' , certi: '​​https://www.coursera.org/account/accomplishments/certificate/N84SHLXRGJVB'},
     
-        {title: 'Introduction to Structured Query Language (SQL)' , courseProvider: 'University Of Michigan, Coursera' , certi: 'https://www.coursera.org/account/accomplishments/certificate/88VL47ZBSAPT'},
+        {title: 'Introduction to Structured Query Language (SQL)' , courseProvider: 'University Of Michigan, Coursera' , certi: 'https://www.coursera.org/account/accomplishments/verify/88VL47ZBSAPT'},
     
         {title: 'Building Web Applications in PHP' , courseProvider: 'University Of Michigan, Coursera' , certi: '​​https://www.coursera.org/account/accomplishments/certificate/TB4VSU2ETMAM'},
     
-        {title: 'HTML, CSS, and Javascript for Web Developers' , courseProvider: 'University Of Michigan, Coursera' , certi: 'https://www.coursera.org/account/accomplishments/certificate/V8UC6LXZHTJA'},
+        {title: 'HTML, CSS, and Javascript for Web Developers' , courseProvider: 'Johns Hopkins University, Coursera' , certi: 'https://www.coursera.org/account/accomplishments/verify/V8UC6LXZHTJA'},
     
         {title: 'The Web Developer Bootcamp' , courseProvider: 'Udemy' , certi: 'https://www.udemy.com/certificate/UC-6a101cd1-a7d5-4def-a3a1-c29e66b84b08/'}
     ]},
@@ -36,9 +36,9 @@ let eduDetails = [
     {year:2016, details:[
         {title: 'Siemens Basics of Programmable Logic Controller Certificate' , courseProvider: 'Siemens Center of Excellence' , certi: ''}
     ]},
-    {year:2014, details:[
-        {title: 'Navsari High School' , courseProvider: 'Gujarat Secondary and Higher Secondary Education Board, India' , certi: ''}
-    ]}
+    // {year:2014, details:[
+    //     {title: 'Navsari High School' , courseProvider: 'Gujarat Secondary and Higher Secondary Education Board, India' , certi: ''}
+    // ]}
 ]
 
 module.exports = eduDetails;
